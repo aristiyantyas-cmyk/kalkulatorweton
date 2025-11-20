@@ -6,10 +6,10 @@ body {
     line-height: 1.6;
 }
 .site-header {
-    background: #FF4D00; 
-    padding: 70px 0;
+    background: #c45f33; 
+    padding: 20px 0;
     box-shadow: none;
-    text-align: center;
+    text-align: left;
 }
 
 .header-left {
@@ -81,14 +81,14 @@ input[type="date"] {
 }
 
 input[type="date"]:focus {
-    border-color: #FF4D00; 
+    border-color: #c45f33; 
     outline: none;
 }
 
 /* --- BUTTON (Pink/Fuchsia Aksen) --- */
 button {
     width: 100%;
-    background:#FF4D00; 
+    background:#c45f33; 
     color: #ffffff;
     padding: 16px;
     border-radius: 8px;
@@ -117,7 +117,7 @@ button:hover {
 .result-box h2 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #FF4D00;
+    color:#c45f33;
 }
 
 .result-box hr {
@@ -135,7 +135,7 @@ button:hover {
 }
 
 .hari-baik h4, .solusi-buruk h4 {
-    color: #FF4D00; 
+    color: #c45f33; 
     font-size: 16px;
     text-align: center;
     font-weight: normal;
