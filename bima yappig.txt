@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDO RABI ORA IKI?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+    <img src="logo.png" class="header-logo" alt="Logo">
+    
+    <div class="header-text">
+        <h1 class="site-title">SIDO RABI ORA IKI?</h1>
+        <p class="site-slogan">Kalkulator kecocokan weton Jawa, solusi lancar rabi</p>
+    </div>
+</header>
+    <main>
+    <h2>Kalkulator Kecocokan Weton Jawa</h2>
+    <div class="form-box">
+        <label>Tanggal Lahir Calon Manten Lanang:</label>
+        <input type="date" id="tanggal1">
+        <label>Tanggal Lahir Calon Manten Wadon:</label>
+        <input type="date" id="tanggal2">
+        <button onclick="proses()">Hitung</button>
+    </div>
+    <div id="hasil" class="hidden"></div>
+        tambahan = `
+    <div class="solusi">
+        <h3>Solusi Agar Tetap Bisa Menikah</h3>
+        <div class="solusi-item" onclick="toggleSolusi(this)">
+            <b>Tirakat / Laku Spiritual</b>
+            <p>
+                Laku tirakat seperti puasa mutih, weton, atau Senin-Kamis, dipercaya dapat meredam energi negatif dari hasil hitungan buruk. 
+                Ini menjadi bentuk permohonan kepada Tuhan agar bahaya atau konflik yang dikhawatirkan dapat dielakkan. 
+            </p>
+        </div>
+        <div class="solusi-item" onclick="toggleSolusi(this)">
+            <b>Ruwatan</b>
+            <p>
+                Ruwatan adalah upacara spiritual untuk membuang kesialan.
+                Bisa dilakukan secara sederhana oleh tokoh adat atau sesepuh, sebagai simbol pembersihan diri dan rumah tangga dari potensi energi buruk yang dibaca dari hitungan weton.
+            </p>
+        </div>
+        <div class="solusi-item" onclick="toggleSolusi(this)">
+            <b>Tolak Bala / Sesajen</b>
+            <p>
+                Dalam praktik kejawen, beberapa sesajen seperti tumpeng kecil, bunga setaman, atau kembang telon bisa digunakan untuk menetralkan energi spiritual. 
+                Biasanya dilakukan di malam weton salah satu pasangan sebagai bentuk penyelarasan.
+            </p>
+        </div>
+        <div class="solusi-item" onclick="toggleSolusi(this)">
+            <b>Konsultasi dengan Sesepuh atau Ahli Primbon</b>
+            <p>
+                Dalam masyarakat Jawa, peran sesepuh atau juru hitung weton sangat dihormati. 
+                Mereka bisa memberikan petunjuk atau solusi spiritual berdasarkan pengalaman dan pemahaman mendalam, termasuk ritual khusus yang mungkin diperlukan.
+            </p>
+        </div>
+      <div class="solusi-item" onclick="toggleSolusi(this)">
+            <b>Memilih Hari Pernikahan yang Tepat</b>
+            <p>
+                Jika weton dianggap tidak serasi, maka pemilihan hari pernikahan menjadi sangat penting.
+                Menentukan hari baik atau dino apik yang cocok dengan gabungan weton pasangan diyakini dapat menyeimbangkan energi dan menghindari halangan besar di awal pernikahan.
+            </p>
+        </div>
+    </div>
+`;
+</main>
+    <footer>
+        <p>© 2025 • Dibuat untuk Lomba AREK_AI Jatim • Oleh Tim TheHolmes</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
