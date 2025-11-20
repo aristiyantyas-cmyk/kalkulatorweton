@@ -2,21 +2,21 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f2f5; /* Background abu-abu muda, bersih seperti INVI.ID */
-    color: #333;
+    background: #f0f2f5; 
+    color: #333; 
     line-height: 1.6;
 }
 
 /* --- HEADER (Minimalis) --- */
 .site-header {
-    background: none; /* Hilangkan background tebal */
+    background: none; 
     padding: 20px 0;
     box-shadow: none;
     text-align: center;
 }
 
 .header-left {
-    display: block; /* Agar logo dan teks terpusat */
+    display: block; 
     max-width: 900px;
     margin: 0 auto;
 }
@@ -28,25 +28,25 @@ body {
 
 .header-text h1 {
     margin: 0;
-    color: #333; /* Warna teks gelap */
+    color: #333; 
     font-size: 30px;
     font-weight: 700;
 }
 
 .header-text p {
-    color: #888; /* Warna slogan lebih lembut */
+    color: #888; 
     font-size: 16px;
     margin-bottom: 30px;
 }
 
 /* --- MAIN CARD (Kalkulator) --- */
 .card {
-    max-width: 700px; /* Lebih lebar, seperti tampilan INVI.ID */
+    max-width: 700px; 
     margin: 30px auto;
     padding: 40px;
     border-radius: 12px;
     background: #ffffff;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Bayangan lembut */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); 
 }
 
 .card h2 {
@@ -77,21 +77,21 @@ input[type="date"] {
     padding: 12px;
     margin-top: 5px;
     box-sizing: border-box;
-    border-radius: 8px; /* Sudut lebih melengkung */
+    border-radius: 8px; 
     border: 1px solid #ddd;
     font-size: 16px;
     transition: border-color 0.3s;
 }
 
 input[type="date"]:focus {
-    border-color: #e61d56; /* Border fokus warna pink */
+    border-color: #e61d56; 
     outline: none;
 }
 
 /* --- BUTTON (Pink/Fuchsia Aksen) --- */
 button {
     width: 100%;
-    background: #e61d56; /* Warna Pink/Fuchsia untuk tombol utama */
+    background: #e61d56; 
     color: #ffffff;
     padding: 16px;
     border-radius: 8px;
@@ -104,10 +104,10 @@ button {
 }
 
 button:hover {
-    background: #c9174b; /* Warna lebih gelap saat hover */
+    background: #c9174b; 
 }
 
-/* RESULT BOX */
+/* --- RESULT BOX (Hasil) --- */
 .result-box {
     margin-top: 25px;
     padding: 20px;
@@ -117,11 +117,66 @@ button:hover {
     font-weight: 500;
 }
 
-.hidden {
-    display: none;
+.result-box h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #e61d56;
 }
 
-/* --- SOLUSI SECTION --- */
+.result-box hr {
+    border: 0;
+    border-top: 1px dashed #f9c7d4;
+    margin: 15px 0;
+}
+
+/* --- Hasil Weton Cocok/Tidak Cocok --- */
+.hari-baik h3, .solusi-buruk h3 {
+    color: #F5A941; 
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hari-baik h4, .solusi-buruk h4 {
+    color: #e61d56; 
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    margin: 5px 0 15px 0;
+}
+
+.hari-baik ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.hari-baik ul li {
+    background: #ffffff;
+    padding: 10px 15px;
+    border: 1px solid #eee;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.hari-baik ul li b {
+    display: block;
+    color: #333;
+}
+
+.hari-baik ul li i {
+    font-size: 13px;
+    color: #777;
+}
+
+.solusi-buruk ul {
+    margin: 15px 0;
+    padding-left: 40px;
+    color: #555;
+}
+
+/* --- SOLUSI SECTION (Akordeon) --- */
 .solusi-section {
     max-width: 700px;
     margin: 50px auto;
@@ -132,7 +187,7 @@ button:hover {
 
 .solusi-section h3 {
     text-align: center;
-    color: #e61d56; /* Judul Solusi warna Pink/Fuchsia */
+    color: #e61d56; 
     font-size: 26px;
     margin-bottom: 30px;
 }
@@ -146,10 +201,6 @@ button:hover {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: all 0.3s;
-}
-
-.solusi-item:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .solusi-item h4 {
@@ -179,17 +230,4 @@ footer {
     color: #545454;
     font-size: 14px;
     margin-top: 40px;
-}
-
-/* MEDIA QUERIES for responsiveness */
-@media (max-width: 768px) {
-    .card {
-        margin: 20px;
-        padding: 25px;
-    }
-
-    .solusi-section {
-        margin: 20px;
-        padding: 0;
-    }
 }
