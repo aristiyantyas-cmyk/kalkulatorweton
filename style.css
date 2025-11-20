@@ -1,4 +1,3 @@
-/* GLOBAL STYLES */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,11 +5,9 @@ body {
     color: #333; 
     line-height: 1.6;
 }
-
-/* --- HEADER (Minimalis) --- */
 .site-header {
-    background: none; 
-    padding: 20px 0;
+    background: #FF4D00; 
+    padding: 70px 0;
     box-shadow: none;
     text-align: center;
 }
@@ -22,7 +19,7 @@ body {
 }
 
 .logo {
-    height: 40px;
+    height: 110px;
     margin: 0 0 10px 0;
 }
 
@@ -84,14 +81,14 @@ input[type="date"] {
 }
 
 input[type="date"]:focus {
-    border-color: #e61d56; 
+    border-color: #FF4D00; 
     outline: none;
 }
 
 /* --- BUTTON (Pink/Fuchsia Aksen) --- */
 button {
     width: 100%;
-    background: #e61d56; 
+    background:#FF4D00; 
     color: #ffffff;
     padding: 16px;
     border-radius: 8px;
@@ -104,7 +101,7 @@ button {
 }
 
 button:hover {
-    background: #c9174b; 
+    background: #d64100; 
 }
 
 /* --- RESULT BOX (Hasil) --- */
@@ -112,20 +109,20 @@ button:hover {
     margin-top: 25px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #fff8f8; /* Background sangat muda, mirip notifikasi pink */
-    border: 1px solid #f9c7d4;
+    background-color: #fffafa; /* Background sangat muda, mirip notifikasi pink */
+    border: 1px solid #ffc7a3;
     font-weight: 500;
 }
 
 .result-box h2 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #e61d56;
+    color: #FF4D00;
 }
 
 .result-box hr {
     border: 0;
-    border-top: 1px dashed #f9c7d4;
+    border-top: 1px dashed #ffc7a3;
     margin: 15px 0;
 }
 
@@ -138,7 +135,7 @@ button:hover {
 }
 
 .hari-baik h4, .solusi-buruk h4 {
-    color: #e61d56; 
+    color: #FF4D00; 
     font-size: 16px;
     text-align: center;
     font-weight: normal;
@@ -187,7 +184,7 @@ button:hover {
 
 .solusi-section h3 {
     text-align: center;
-    color: #e61d56; 
+    color: #FF4D00; 
     font-size: 26px;
     margin-bottom: 30px;
 }
