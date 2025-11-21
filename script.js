@@ -41,7 +41,7 @@ function hitungWeton(tanggalInput) {
     };
 }
 
-// --- FUNGSI RAMALAN JODOH (MODULO 7) ---
+// --- FUNGSI RAMALAN JODOH ---
 function ramalanJodoh(totalNeptu) {
     const sisa = totalNeptu % 7;
 
@@ -177,9 +177,9 @@ function proses() {
         tambahanHTML = `
             <div class="hari-baik">
                 <h3>🎉 Selamat, Weton Kalian COCOK!</h3>
-                <h4>Berikut kami rekomendasikan **7 hari baik** terdekat untuk menikah.</h4>
+                <h4>Berikut kami rekomendasikan 7 hari baik terdekat untuk menikah.</h4>
                 ${htmlList}
-                <p style="text-align: center; font-size: 13px; color: #888; margin-top: 15px;">Ingatlah, perhitungan weton adalah panduan, namun komunikasi, kesetiaan, dan saling pengertian adalah pilar utama pernikahan yang langgeng.</p>
+                <p style="text-align: center; font-size: 13px; color: #888; margin-top: 15px;">Ingatlah, perhitungan weton adalah panduan, namun komunikasi, kesetiaan, dan saling pengertian adalah pilar utama pernikahan yang langgeng. Jangan lupa hafalkan tepuk sakinah!</p>
             </div>
         `;
 
@@ -187,17 +187,31 @@ function proses() {
     } else {
         tambahanHTML = `
             <div class="solusi-buruk">
-                <h3>⚠️ Weton Kurang Serasi.</h3>
-                <h4>Jangan terlalu kecewa, Tuhan-lah yang menentukan segalanya. Berikut solusi agar kalian tetap bisa menikah:</h4>
+                <h3>Sayang Sekali, Weton Kalian Kurang Serasi.</h3>
+                <h4>Tapi jangan terlalu kecewa, Tuhan-lah yang menentukan segalanya. Berikut solusi agar kalian tetap bisa menikah:</h4>
                 <ul style="list-style-type: decimal; padding-left: 20px;">
-                    <li>Tirakat atau Laku Spiritual (Puasa Mutih/Senin-Kamis).</li>
-                    <li>Ruwatan atau Netralisasi Energi Buruk.</li>
-                    <li>Tolak Bala / Sesajen Khusus (Penyelarasan).</li>
-                    <li>Konsultasi dengan Sesepuh atau Ahli Primbon.</li>
-                    <li>Memilih hari dan waktu pernikahan yang lebih serasi (Dino Apik).</li>
-                </ul>
-                <p style="text-align: center; font-size: 12px; color: #aaa; margin-top: 15px;">**Penting:** Jika hubungan dibangun atas dasar cinta dan tanggung jawab, weton hanyalah satu bagian kecil dari banyak faktor.</p>
-            </div>
+                    <li class="solusi-item" onclick="toggleSolusi(this)">
+                        <h4>Tirakat / Laku Spiritual</h4>
+                        <p class="solusi-detail">Laku tirakat seperti puasa mutih, weton, atau Senin-Kamis, dipercaya dapat meredam energi negatif dari hasil hitungan buruk. Ini menjadi bentuk permohonan kepada Tuhan agar bahaya atau konflik yang dikhawatirkan dapat dielakkan.</p>
+                    </li>
+                    
+                    <li class="solusi-item" onclick="toggleSolusi(this)">
+                        <h4>Ruwatan</h4>
+                        <p class="solusi-detail">Ruwatan adalah upacara spiritual untuk membuang kesialan. Bisa dilakukan secara sederhana oleh tokoh adat atau sesepuh, sebagai simbol pembersihan diri dan rumah tangga dari potensi energi buruk yang dibaca dari hitungan weton.</p>
+                    </li>
+                    
+                    <li class="solusi-item" onclick="toggleSolusi(this)">
+                        <h4>Tolak Bala / Sesajen</h4>
+                        <p class="solusi-detail">Dalam praktik kejawen, beberapa sesajen seperti tumpeng kecil, bunga setaman, atau kembang telon bisa digunakan untuk menetralkan energi spiritual. Biasanya dilakukan di malam weton salah satu pasangan sebagai bentuk penyelarasan.</p>
+                    </li>
+                    
+                    <li class="solusi-item" onclick="toggleSolusi(this)">
+                        <h4>Memilih Hari Pernikahan yang Tepat</h4>
+                        <p class="solusi-detail">Jika weton dianggap tidak serasi, maka pemilihan hari pernikahan menjadi sangat penting. Menentukan hari baik atau dino apik yang cocok dengan gabungan weton pasangan diyakini dapat menyeimbangkan energi dan menghindari halangan besar di awal pernikahan.</p>
+                    </li>
+                        </ul>
+                        <p style="text-align: center; font-size: 12px; color: #aaa; margin-top: 15px;">Penting: Jika hubungan dibangun atas dasar cinta dan tanggung jawab, weton hanyalah satu bagian kecil dari banyak faktor.</p>
+                    </div>
         `;
     }
 
