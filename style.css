@@ -219,6 +219,15 @@ button:hover {
     display: block;
 }
 
+.keterangan-weton {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #ddd; 
+    font-size: 0.85em; 
+    color: #555; 
+    text-align: justify;
+}
+
 footer {
     text-align: center;
     padding: 20px;
